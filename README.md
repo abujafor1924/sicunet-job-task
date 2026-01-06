@@ -110,8 +110,8 @@ docker-compose down
 3. **Run Django commands inside Docker**
 
 ```bash
-docker-compose run --rm app python manage.py migrate
-docker-compose run --rm app python manage.py createsuperuser
+ docker-compose run --rm web python sicunet/manage.py migrate
+ docker-compose run --rm web python sicunet/manage.py createsuperuser
 ```
 
 > Replace `app` with your service name from `docker-compose.yml` if different.
