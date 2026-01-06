@@ -25,11 +25,11 @@ jobs:
 
       - name: Make migrations
         run: |
-          python manage.py makemigrations
+          python sicunet/manage.py makemigrations
 
       - name: Run migrations
         run: |
-          python manage.py migrate --run-syncdb
+          python sicunet/manage.py migrate --run-syncdb
 
       - name: Run tests
         run: |
