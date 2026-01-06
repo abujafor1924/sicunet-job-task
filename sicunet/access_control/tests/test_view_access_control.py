@@ -32,5 +32,5 @@ class AccessControlViewTests(APITestCase):
         url = reverse('access-log-detail', args=[self.access_log.id])
         response = self.client.get(url, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data['data']['card_id'], self.access_log.card_id)
+        self.assertEqual(response.data['card_id'], self.access_log.card_id)
 

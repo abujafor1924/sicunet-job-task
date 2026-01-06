@@ -41,10 +41,7 @@ class AccessLogListCreateView(generics.ListCreateAPIView):
         self.perform_create(serializer)
 
         return Response(
-            {
-                "message": "Access log created successfully",
-                "data": serializer.data
-            },
+            {"message": "AccessLog entry created successfully", "data": serializer.data},
             status=status.HTTP_201_CREATED
         )
 
@@ -54,10 +51,7 @@ class AccessLogListCreateView(generics.ListCreateAPIView):
         serializer = self.get_serializer(queryset, many=True)
 
         return Response(
-            {
-                "message": "Access logs fetched successfully",
-                "data": serializer.data
-            },
+            {"data": serializer.data},
             status=status.HTTP_200_OK
         )
 
@@ -74,9 +68,8 @@ class AccessLogRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
 
         return Response(
             {
-                "message": "Access log fetched successfully",
-                "data": serializer.data
-            },
+                "message": "AccessLog entry retrieved successfully",
+                "data": serializer.data},
             status=status.HTTP_200_OK
         )
 
@@ -90,7 +83,7 @@ class AccessLogRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
 
         return Response(
             {
-                "message": "Access log updated successfully",
+                "message": "AccessLog entry updated successfully",
                 "data": serializer.data
             },
             status=status.HTTP_200_OK
@@ -102,8 +95,6 @@ class AccessLogRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
         self.perform_destroy(instance)
 
         return Response(
-            {
-                "message": "Access log deleted successfully"
-            },
-            status=status.HTTP_204_NO_CONTENT
+            {"message": "AccessLog entry deleted successfully"},
+            status=status.HTTP_200_OK
         )
