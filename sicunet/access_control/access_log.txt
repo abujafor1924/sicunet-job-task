@@ -10,3 +10,10 @@
 [2026-01-06 04:37:02] CREATE: Access GRANTED for Card ID: 123456 at Door: Main Entrance
 [2026-01-06 04:37:02] CREATE: Access DENIED for Card ID: 654321 at Door: Side Entrance
 [2026-01-06 04:37:02] CREATE: Access GRANTED for Card ID: 123456 at Door: Main Entrance
+[2026-01-06 05:07:10] CREATE: Access GRANTED for Card ID: 123456 at Door: Main Entrance
+[2026-01-06 05:07:10] CREATE: Access GRANTED for Card ID: 123456 at Door: Main Entrance
+[2026-01-06 05:07:10] CREATE: Access DENIED for Card ID: 654321 at Door: Back Entrance
+[2026-01-06 05:07:10] CREATE: Access GRANTED for Card ID: 123456 at Door: Main Entrance
+[2026-01-06 05:07:10] CREATE: Access DENIED for Card ID: 654321 at Door: Side Entrance
+[2026-01-06 05:07:10] CREATE: Access GRANTED for Card ID: 123456 at Door: Main Entrance
+[2026-01-06 05:08:00] CREATE: Access GRANTED for Card ID: string at Door: string
