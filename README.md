@@ -129,13 +129,17 @@ docker-compose logs -f
 ```bash
 python manage.py test
 ```
+## Main Project Run Test
+```bash
+python sicunet/manage.py test access_control
+```
 
 * All apps’ tests will be executed.
 
 If using Docker:
 
 ```bash
-docker-compose run --rm app python manage.py test
+docker-compose run --rm web sh -c "python sicunet/manage.py test access_control"
 ```
 
 
